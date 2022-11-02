@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.navbar-icon {
+  width: 35px;
+}
+.title {
+  font-weight: 900;
+}
+.subtitle {
+  font-size: 1.3em;
+}
+small {
+  font-weight: 200;
+}
+.section {
+  padding: 90px 0;
+  position: relative;
+}
+.titles {
+  text-align: center;
+  margin-bottom: 50px;
+}
+video,
+img {
+  max-width: 100%;
+}
+.my-btn {
+  background-color: #933a62;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation: blick 3s;
+  border: none;
+}
+.my-btn::before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.7;
+  top: -3px;
+  display: block;
+  width: 8px;
+  height: 130%;
+  transform: rotate(20deg);
+  left: -100%;
+  transition: 1s;
+}
+.my-btn:hover {
+  background-color: #933a62;
+  color: #fff;
+}
+.my-btn:hover::before {
+  transform: translateX(300px) rotate(20deg);
+}
+.my-btn:active {
+  background-color: #802950!important;
+  color: #fff!important;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+.header {
+  background: url('../img/bg.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+h1 {
+  font-size: 3em;
+}
+.header-text {
+  margin-top: 75px;
+}
+.header-text h1,
+.header-text p {
+  opacity: 0.9;
+}
+.header-text p {
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin: 20px 0 25px;
+}
+
+.header-img {
+  position: absolute;
+  bottom: 60px;
+  right: -10px;
+  width: 40%;
+}
+.header-img img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.header-slogan {
+  position: absolute;
+  top: 120px;
+  right: 25%;
+  transform: rotate(-5deg);
+  background-color: red;
+  width: 150px;
+  height: 130px;
+  background: url('../img/text-box.png') center no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-slogan__text {
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap
+}
+.snow {
+  position: absolute;
+}
+.snow-1 {
+  bottom: 100px;
+  right: 300px;
+  opacity: 0.5;
+  width: 150px;
+}
+
+.is-it-tasty p {
+  font-size: 1.5em;
+}
+.snow-2 {
+  top: 30px;
+  left: 50px;
+  width: 100px;
+  opacity: 0.4;
+  animation: snow-rev 80s infinite linear;
+}
+.snow-3 {
+  width: 80px;
+  opacity: 0.5;
+  bottom: 90px;
+  right: 160px;
+  animation: snow 55s infinite linear;
+}
+
+@keyframes snow {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes snow-rev {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.trust video {
+  border-radius: 10px;
+}
+.snow-4 {
+  opacity: 0.5;
+  width: 130px;
+  left: 150px;
+  bottom: 160px;
+  animation: snow 100s infinite linear;
+}
+
+.map {
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contacts .img {
+  width: 100%;
+  height: 300px;
+  background-position: top center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.contacts .name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.contact-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-list__item {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.contact-list__item .icon {
+  width: 25px;
+  margin-right: 15px;
+}
+.contact-list__item a {
+  text-decoration: none;
+  color: #000;
+}
+.contact-list__item a:hover {
+  text-decoration: underline;
+}
+.snow-5 {
+  width: 100px;
+  bottom: -40px;
+  left: 70px;
+  opacity: 0.6;
+}
+.snow-6 {
+  width: 90px;
+  left: 45px;
+  bottom: 70px;
+  opacity: 0.5;
+  animation: snow-rev 90s infinite linear;
+}
+.snow-7 {
+  width: 150px;
+  right: 130px;
+  top: 140px;
+  opacity: 0.3;
+}
+
+.promo p {
+  font-size: 1.2em;
+}
+.promotion-timer {
+  background-color: #802950;
+  border-radius: 10px;
+  padding: 15px 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+.promotion-timer__text {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+.promotion-timer__time {
+  font-weight: bold;
+  min-width: 155px;
+}
+.promotion-timer__time > span {
+  font-size: 1.5em;
+}
+.promotion-timer__time .desc {
+  line-height: 0.8;
+}
+.promotion-timer__time .desc span {
+  font-size: 0.8em;
+  font-weight: 400;
+  opacity: 0.7;
+  display: inline-block;
+  width: 45px;
+}
+.header .promotion-timer {
+  position: absolute;
+  bottom: 60px;
+}
