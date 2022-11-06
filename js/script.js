@@ -1,9 +1,24 @@
 $(document).ready(function() {
   // drink
-  
+  // let isInPage = true;
+  // $(window).focus(function() {
+  //   isInPage = true;
+  // });
+  // $(window).blur(function() {
+  //   isInPage = false;
+  // });
+
   let k = 1;
   pasteHeaderSlogan(k-1);
-  setInterval(function() {
+  // setInterval(function() {
+    // if (!isInPage) return;
+  let start = performance.now();
+  requestAnimationFrame(function animate(time) {
+    if (time - start < 3000) {
+      requestAnimationFrame(animate);
+      return;
+    }
+
     if (k >= 4) {
       k = 1;
       $('.drink').fadeIn(600);
@@ -13,7 +28,11 @@ $(document).ready(function() {
       k++;
       pasteHeaderSlogan(k-1);
     }
-  }, 3000);
+    
+    start = performance.now();
+    requestAnimationFrame(animate);
+  });
+  // }, 3000);
 
   $("body").on("click", 'a[href^="#"]', function (event) { 
     event.preventDefault(); 

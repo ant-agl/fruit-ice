@@ -18,6 +18,7 @@ small {
 .section {
   padding: 90px 0;
   position: relative;
+  overflow-x: hidden;
 }
 .titles {
   text-align: center;
@@ -82,6 +83,7 @@ h1 {
 .header-text h1,
 .header-text p {
   opacity: 0.9;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 .header-text p {
   font-size: 1.3em;
@@ -171,7 +173,7 @@ h1 {
   border-radius: 10px;
 }
 .snow-4 {
-  opacity: 0.5;
+  opacity: 0.4;
   width: 130px;
   left: 150px;
   bottom: 160px;
@@ -277,4 +279,97 @@ h1 {
 .header .promotion-timer {
   position: absolute;
   bottom: 60px;
+}
+
+
+@media (max-width: 991px) {
+  .header-img {
+    /* right: -45px; */
+  }
+  .snow-1 {
+    bottom: 40px;
+    right: -15px;
+  }
+  .snow-3 {
+    right: 90px;
+  }
+  .snow-4 {
+    left: -15px;
+  }
+  .contacts .img {
+    height: 210px;
+  }
+  .snow-6 {
+    left: -15px;
+  }
+  .snow-7 {
+    top: 30px;
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-img,
+  .header-slogan {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts .img {
+    height: 160px;
+  }
+  .contacts .name {
+    line-height: 1.2
+  }
+  .contact-list__item .icon {
+    margin-right: 10px;
+  }
+  .snow-6 {
+    display: none;
+  }
+  .index-99 {
+    position: relative;
+    z-index: 99;
+  }
+  .snow-1 {
+    bottom: 0;
+    right: -30px;
+    opacity: 0.3;
+  }
+  .snow-2 {
+    left: -40px;
+    top: 150px;
+  }
+  .snow-3 {
+    display: none;
+  }
+
+  .promotion-timer {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.1em;
+  }
+  .promotion-timer__text {
+    margin-right: 0;
+  }
+  .promotion-timer__time > span {
+    font-size: 1.2em;
+  }
+  .promotion-timer__time .desc span {
+    width: 35px;
+  }
+  .header .promotion-timer {
+    width: auto;
+    left: 12px;
+    right: 12px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 820px) and (min-height: 1000px) {
+  .header-img {
+    transform: scale(1.5);
+    bottom: 190px;
+  }
 }
