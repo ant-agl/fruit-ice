@@ -320,10 +320,12 @@ h1 {
     height: 160px;
   }
   .contacts .name {
-    line-height: 1.2
+    line-height: 1.2;
+    min-height: 44px;
   }
   .contact-list__item .icon {
-    margin-right: 10px;
+    margin-right: 8px;
+    width: 16px;
   }
   .snow-6 {
     display: none;
