@@ -102,7 +102,7 @@ function replaceTimerData(data={}) {
   $('.promotion-timer .minutes').text(data.m);
   $('.promotion-timer .seconds').text(data.s);
 }
-let endDate = new Date(2022, 11, 7);
+let endDate = new Date(2022, 11, 31);
 replaceTimerData(calculateTime(endDate));
 setInterval(() => {
   replaceTimerData(calculateTime(endDate));
